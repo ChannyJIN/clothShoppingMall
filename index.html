@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>옷 페이지</title>
+    <style>
+        body {
+            width: 900px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <img class="logo"
+                src="data:image/png;base64,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"
+                alt="logo">
+            <p class="head1">FitStyle</p>
+        </a>
+    </header>
+    <hr>
+    <nav>
+        <div class="Tmenu">
+            <span><a href="" class="Tm">Best</a></span>
+            <span class="dropdown">
+                <span class="Tm">상의</span>
+                <span class="dropdown-content">
+                    <a href="./goods_outer_top.html">아우터</a>
+                    <a href="#">반팔</a>
+                    <a href="#">니트</a>
+                    <a href="#">맨투맨</a>
+                </span>
+            </span>
+            <span class="dropdown">
+                <span class="Tm">하의</span>
+                <span class="dropdown-content">
+                    <a href="#">슬렉스</a>
+                    <a href="#">트레이닝 바지</a>
+                    <a href="#">청바지</a>
+                    <a href="#">반바지</a>
+                </span>
+            </span>
+            <span><a href="" class="Tm">악세서리</a></span>
+            <span><a href="./goods_shoes.html" class="Tm">신발</a></span>
+        </div>
+        <hr>
+        <div class="nRight">
+            <span><a href="" class="log">LOGIN</a></span>
+            <span><a href="" class="log">JOIN</a></span>
+            <span><a href="" class="log">CART</a></span>
+        </div>
+    </nav>
+
+    <hr>
+    <div class="table1">
+        <p class="orderT"><br>주문하기</p>
+        <table>
+            <tr class="TR">
+                <td>
+                    상품 선택
+                </td>
+                <td>
+                    <select name="fruit">
+                        <option value="청사과">옷</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr class="TR">
+                <td>
+                    개수
+                </td>
+                <td>
+                    <input type="text">EA
+                </td>
+            </tr>
+        </table>
+        <input class="Button" type="submit" value="장바구니 추가">
+
+    </div>
+    <hr>
+    <div class="table2">
+        <p class="orderT"><br>배송정보</p>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        배송지 선택
+                    </td>
+                    <td>
+                        <input type="radio">회원정보와 동일
+                        <input type="radio">새로운 주소
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        보내는 분
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        받으시는 분
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        주소
+                    </td>
+                    <td>
+                        <input type="text" size="10">&nbsp;<button>우편번호 찾기</button><br>
+                        <input type="text" size="50"><br>
+                        <input type="text" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        휴대전화
+                    </td>
+                    <td>
+                        <input type="text" size="5">
+                        -<input type="text" size="5">
+                        -<input type="text" size="5">
+                    </td>
+                </tr>
+                <tr class="TR">
+                    <td>
+                        이메일
+                    </td>
+                    <td>
+                        <input type="text">@<input type="text">
+                        <select name="email">
+                            <option>naver.com</option>
+                            <option>daum.net</option>
+                            <option>nate.com</option>
+                            <option>hanmail.net</option>
+                            <option>gmail.com</option>
+                            <option>yahoo.com</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="TR">
+                    <td>
+                        배송 메세지
+                    </td>
+                    <td>
+                        <textarea cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <input class="Button" type="submit" value="주문하기">
+    </div>
+    <hr>
+
+    <footer>
+        <p class="p">즐거운 쇼핑되세요
+        <p>COPYRIGHT © ByeongChanJIN</p>
+    </footer>
+
+</body>
+
+</html>
