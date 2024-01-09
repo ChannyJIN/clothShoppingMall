@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>옷 페이지</title>
+    <style>
+        body {
+            width: 900px;
+        }
+    </style>
 </head>
-
 <body>
     <header>
         <a href="./index.html">
@@ -19,33 +23,46 @@
     <hr>
     <nav>
         <div class="Tmenu">
-            <span><a href="" class="Tm">Best</a></span>
-            <span><a href="" class="Tm">상의</a></span>
-            <span><a href="" class="Tm">하의</a></span>
-            <span><a href="" class="Tm">악세서리</a></span>
+            <span><a href="./goods_best.html" class="Tm">Best</a></span>
+            <span class="dropdown">
+                <span class="Tm">상의</span>
+                <span class="dropdown-content">
+                    <a href="./goods_outer_top.html">아우터</a>
+                    <a href="./goods_shortsT_top.html">반팔</a>
+                    <a href="./goods_knit_top.html">니트</a>
+                </span>
+            </span>
+            <span class="dropdown">
+                <span class="Tm">하의</span>
+                <span class="dropdown-content">
+                    <a href="./goods_slacks_pants.html">슬렉스</a>
+                    <a href="./goods_traning_pants.html">트레이닝바지</a>
+                    <a href="./goods_denim_pants.html">청바지</a>
+                </span>
+            </span>
+            <span><a href="./goods_extra.html" class="Tm">악세서리</a></span>
             <span><a href="./goods_shoes.html" class="Tm">신발</a></span>
         </div>
         <hr>
         <div class="nRight">
-            <span><a href="" class="log">LOGIN</a></span>
-            <span><a href="" class="log">JOIN</a></span>
-            <span><a href="" class="log">CART</a></span>
+            
+            <span><a href="./order.html" class="log">Order</a></span>
         </div>
     </nav>
     <hr>
     <div class="goods">
-        <div class="fruitA">
-            <p class="Ftitle">아우터</p>
-            <div class="fruitA-1">
-                <div class="fruitA-2">
-                    <div class="fruit">
+        <div class="goodsA">
+            <p class="title">상의 > 아우터</p>
+            <div class="goodsA-1">
+                <div class="goodsA-2">
+                    <div class="outer">
                         <a href="https://www.hiver.co.kr/products/56597339" target="_blank">
                             <img class="image" width="400px" src="./multi/outer1.PNG" alt="옷 사진"><br><span
                                 class="text">남자 오버핏 클래식 바버 벨트 퀄팅 패딩 야상 자켓<br></span><span class="sale">56%<br></span>
                             <span>1EA -> 86,200원</span>
-                        </a>
+                        </a> 
                     </div>
-                    <div class="fruit">
+                    <div class="outer">
                         <a href="https://bowlow.co.kr/product/detail.html?product_no=4738&cate_no=42&display_group=1&utm_medium=paid&utm_source=ig&utm_id=6216559986444&utm_content=6470899932844&utm_term=6470899605444&utm_campaign=6216559986444&fbclid=PAAaaz_UkJ_Sc3H_HYJaXk39pNENeAzOb6Ihojnq8nJJRWMqQkmp4Y_izczic_aem_AbfDtLTmCY3m-p6DF8tSwYAVFXD7ywjppDGpNzo8efNGQ2wG4k258oJpKp0ue9xKDQAJTthStSQMEvpEv3pFryq2#enp_mbris"
                             target="_blank">
                             <img class="image" width="400px"
@@ -56,8 +73,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="fruitA-2">
-                    <div class="fruit">
+                <div class="goodsA-2">
+                    <div class="outer">
                         <a href="https://dearmine.kr/product/%EC%B9%B4%EA%B3%A0-%EB%B0%94%EC%9D%B4%EC%BB%A4-%EB%8D%B0%EB%8B%98-%EC%9E%90%EC%BC%93/1573/category/44/display/1/?fbclid=PAAaZwcaPINYgM6rstnXMl_2gI97fxXhkeccrS4ILBdVxTzQ7nveZEmw3FnA4_aem_AUVRfDXdSk3hEw6TSitk_KzA1gFhzuyKV9ku-xpak58pDTM5HF1HRtFy4MI_FId3tL_3jphwOJMU_TFGerray1np#none"
                             target="_blank">
                             <img class="image" width="400px" src="./multi/outer3.PNG" alt="옷 사진"><br><span
@@ -65,7 +82,7 @@
                             <span>1EA -> 87,000원</span>
                         </a>
                     </div>
-                    <div class="fruit">
+                    <div class="outer">
                         <a href="https://ikkei.co.kr/all/?idx=488&fbclid=PAAaYlPJoBtZnPKyZAgvwwnZKeh1DNyBH45GBDlCyy4mAnWffnHLbzOGcZVfw_aem_AUYKQdbCfSLxM3hrrlUlyaSzH8RmVULK-mY8AgNcBlIOZS5yqZHOECksALXgfJdjxwYho-DUrUU3PI5tMXqBCBFd"
                             target="_blank">
                             <img class="image" width="400px"
@@ -75,9 +92,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="fruitA-2">
+                <div class="goodsA-2">
                     
-                    <div class="fruit">
+                    <div class="outer">
                         <a href="https://gloomyeyes.com/product/%EB%A3%A8%EB%B2%A4-%ED%8C%A8%EB%94%A9-%EC%9E%90%EC%BC%93/20350/category/537/display/1/?utm_medium=paid&utm_source=ig&utm_id=6425445049812&utm_content=6508825368012&utm_term=6508825367612&utm_campaign=6425445049812&fbclid=PAAaZ-c9GEnEDBGryNAlHmaAjelDsrC2VHQOsQSu_F094wZUKHuwOsIqGHv_E_aem_Aa8FzAzMHfKO57FnQG-04f_gJw-ZIMigHtMjr5zdVpyU42hAgQhvZnKb7g0kD8pJ9O7KVDYV64ieShp_MJXpXJSN"
                             target="_blank">
                             <img class="image" width="400px"
@@ -86,7 +103,7 @@
                             <span>1EA -> 122,000원</span>
                         </a>
                     </div>
-                    <div class="fruit">
+                    <div class="outer">
                         <a href="https://gloomyeyes.com/product/%EB%A3%A8%EB%B2%A4-%ED%8C%A8%EB%94%A9-%EC%9E%90%EC%BC%93/20350/category/537/display/1/?utm_medium=paid&utm_source=ig&utm_id=6425445049812&utm_content=6508825368012&utm_term=6508825367612&utm_campaign=6425445049812&fbclid=PAAaZ-c9GEnEDBGryNAlHmaAjelDsrC2VHQOsQSu_F094wZUKHuwOsIqGHv_E_aem_Aa8FzAzMHfKO57FnQG-04f_gJw-ZIMigHtMjr5zdVpyU42hAgQhvZnKb7g0kD8pJ9O7KVDYV64ieShp_MJXpXJSN"
                             target="_blank">
                             <img class="image" width="400px"
@@ -100,7 +117,7 @@
         </div>
         <hr>
         <footer>
-            <p class="p">즐거운 쇼핑되세요
+            <p class="p">옷 추천 홈페이지입니다. <br> 즐거운 쇼핑되세요!
             <p>COPYRIGHT © ByeongChanJIN</p>
         </footer>
 </body>

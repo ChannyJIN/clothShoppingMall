@@ -11,7 +11,6 @@
         }
     </style>
 </head>
-
 <body>
     <header>
         <a href="./index.html">
@@ -50,76 +49,119 @@
             <span><a href="./order.html" class="log">Order</a></span>
         </div>
     </nav>
+
     <hr>
-    <div class="goods">
-        <div class="goodsA">
-            <p class="title">신발</p>
-            <div class="goodsA-1">
-                <div class="goodsA-2">
-                    <div class="shoes">
-                        <a href="https://kream.co.kr/products/12831" target="_blank">
-                            <img class="image" width="400px" src="./multi/shoes1.PNG" alt="신발 사진"><br><span
-                                class="text">나이키 에어포스 1 '07 로우 화이트<br></span><span class="sale">5%<br></span>
-                            <span>1EA -> 116,000원</span>
-                        </a>
-                    </div>
-                    <div class="shoes">
-                        <a href="https://kream.co.kr/products/21935"
-                            target="_blank">
-                            <img class="image" width="400px"
-                                src="./multi/shoes2.PNG"
-                                alt="신발 사진"><br><span class="text">나이키 에어포스 1 '07 WB 플랙스<br></span><span
-                                class="sale">5%<br></span>
-                            <span>1EA -> 148,000원</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="goodsA-2">
-                    <div class="shoes">
-                        <a href="https://kream.co.kr/products/92597"
-                            target="_blank">
-                            <img class="image" width="400px" src="./multi/shoes3.PNG" alt="신발 사진"><br><span
-                                class="text">나이키 에어포스 1 '07 블랙 화이트<br></span><span class="sale">10%<br></span>
-                            <span>1EA -> 90,000원</span>
-                        </a>
-                    </div>
-                    <div class="shoes">
-                        <a href="https://kream.co.kr/products/41193"
-                            target="_blank">
-                            <img class="image" width="400px" src="./multi/shoes4.PNG" alt="신발 사진"><br><span
-                                class="text">나이키 덩크 로우 레트로 그레이 포그<br></span><span class="sale">10%<br></span>
-                            <span>1EA -> 109,000원</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="goodsA-2">
-                    
-                    <div class="shoes">
-                        <a href="https://kream.co.kr/products/25469"
-                            target="_blank">
-                            <img class="image" width="400px"
-                                src="./multi/shoes5.PNG" alt="신발 사진"><br><span
-                                class="text">뉴발란스 2002R 그레이<br></span><span class="sale">3%<br></span>
-                            <span>1EA -> 145,000원</span>
-                        </a>
-                    </div>
-                    <div class="shoes">
-                        <a href="https://kream.co.kr/products/15251"
-                            target="_blank">
-                            <img class="image" width="400px"
-                                src="./multi/shoes6.PNG" alt="옷 사진"><br><span
-                                class="text">아디다스 삼바 OG 클라우드 화이트<br></span><span class="sale">10%<br></span>
-                            <span>1EA -> 97,000원</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="table1">
+        <p class="orderT"><br>주문하기</p>
+        <table>
+            <tr class="TR">
+                <td>
+                    상품 선택
+                </td>
+                <td>
+                    <select name="fruit">
+                        <option value="청사과">옷</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr class="TR">
+                <td>
+                    개수
+                </td>
+                <td>
+                    <input type="text">EA
+                </td>
+            </tr>
+        </table>
+        <input class="Button" type="submit" value="장바구니 추가">
+
+    </div>
+    <hr>
+    <div class="table2">
+        <p class="orderT"><br>배송정보</p>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        배송지 선택
+                    </td>
+                    <td>
+                        <input type="radio">회원정보와 동일
+                        <input type="radio">새로운 주소
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        보내는 분
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        받으시는 분
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        주소
+                    </td>
+                    <td>
+                        <input type="text" size="10">&nbsp;<button>우편번호 찾기</button><br>
+                        <input type="text" size="50"><br>
+                        <input type="text" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        휴대전화
+                    </td>
+                    <td>
+                        <input type="text" size="5">
+                        -<input type="text" size="5">
+                        -<input type="text" size="5">
+                    </td>
+                </tr>
+                <tr class="TR">
+                    <td>
+                        이메일
+                    </td>
+                    <td>
+                        <input type="text">@<input type="text">
+                        <select name="email">
+                            <option>naver.com</option>
+                            <option>daum.net</option>
+                            <option>nate.com</option>
+                            <option>hanmail.net</option>
+                            <option>gmail.com</option>
+                            <option>yahoo.com</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="TR">
+                    <td>
+                        배송 메세지
+                    </td>
+                    <td>
+                        <textarea cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <hr>
-        <footer>
-            <p class="p">옷 추천 홈페이지입니다. <br> 즐거운 쇼핑되세요!
-            <p>COPYRIGHT © ByeongChanJIN</p>
-        </footer>
+        <input class="Button" type="submit" value="주문하기">
+    </div>
+    <hr>
+
+    <footer>
+        <p class="p">옷 추천 홈페이지입니다. <br> 즐거운 쇼핑되세요!
+        <p>COPYRIGHT © ByeongChanJIN</p>
+    </footer>
+
 </body>
 
 </html>
