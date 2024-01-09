@@ -1,5 +1,9 @@
-.hd{
-    
+header{
+    background-color: white;
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 a{
     text-decoration: none;
@@ -9,13 +13,6 @@ a{
     display: inline-block;
 }
 .dropdown-content1, .dropdown-content2{
-    /*display: none;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 1;
-    width: 100px;
-    background-color: rgba(255, 255, 239, 0.631);*/
-    
     display: none;
     position: absolute;
     background-color: #f9f9f9;
