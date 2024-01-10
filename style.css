@@ -142,23 +142,25 @@ a {
 
 .knit {
     padding: 20px 30px;
+
 }
 
 .goodsA-2,
 .goodsB-2 {
     display: flex;
     flex-direction: row;
-    ;
+    
 }
 
 iframe {
-    margin: 0px 40px;
+    margin: 0px 10px;
 }
 
 
 
 
 /*order*/
+
 .orderT {
     font-size: 30px;
     font-family: 'Nanum Pen Script', cursive;
@@ -189,7 +191,7 @@ input[type="submit"] {
     font-family: 'Nanum Pen Script', cursive;
     font-size: 20px;
     margin-top: 20px;
-    background-color: #f1e2c2;
+    background-color: rgb(253, 253, 237);
     border-radius: 10px;
 }
 

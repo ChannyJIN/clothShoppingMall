@@ -13,22 +13,21 @@
     </style>
     <link rel="stylesheet" href="./style.css">
     <script src="./home.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 
 <body>
     <header>
         <div class="hd">
             <a href="./index.html">
-                <img class="logo"
-                    src="./multi/logo.jpg"
-                    alt="logo">
+                <img class="logo" src="./multi/logo.jpg" alt="logo">
             </a>
         </div>
     </header>
 
     <nav>
         <div class="Tmenu">
-            
+
             <div class="menu">
                 <a href="./goods_best.html" class="Tm">Best</a>
             </div>
@@ -55,7 +54,7 @@
                 <a href="./goods_shoes.html" class="Tm">신발</a>
             </div>
         </div>
-        
+
     </nav>
 
     <hr>
@@ -64,8 +63,9 @@
         <span><a href="./order.html" class="order">Order</a></span>
     </div>
 
-<hr>
-    <div class="table1">
+    <hr>
+
+    <div id="order" class="table1">
         <p class="orderT"><br>주문하기</p>
         <table>
             <tr class="TR">
@@ -73,9 +73,8 @@
                     상품 선택
                 </td>
                 <td>
-                    <select name="fruit">
-                        <option value="청사과">옷</option>
-
+                    <select name="cloth">
+                        <option value="청사과">옷종류</option>
                     </select>
                 </td>
             </tr>
@@ -84,11 +83,11 @@
                     개수
                 </td>
                 <td>
-                    <input type="text">EA
+                    <input type="text">개
                 </td>
             </tr>
         </table>
-        <input class="Button" type="submit" value="장바구니 추가">
+        <input id="addToCartButton" class="Button" type="submit" value="장바구니 추가">
     </div>
     <hr>
     <div class="table2">
@@ -97,47 +96,49 @@
             <table>
                 <tr>
                     <td>
-                        배송지 선택
+                        *배송지 선택
                     </td>
                     <td>
-                        <input type="radio">회원정보와 동일
-                        <input type="radio">새로운 주소
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        보내는 분
-                    </td>
-                    <td>
-                        <input type="text">
+                        <input name="1" type="radio">회원정보와 동일
+                        <input name="1" type="radio">새로운 주소
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        받으시는 분
+                        *보내는 분
                     </td>
                     <td>
-                        <input type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        주소
-                    </td>
-                    <td>
-                        <input type="text" size="10">&nbsp;<button>우편번호 찾기</button><br>
-                        <input type="text" size="50"><br>
-                        <input type="text" size="50">
+                        <input type="text" name="sender">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        휴대전화
+                        *받으시는 분
                     </td>
                     <td>
-                        <input type="text" size="5">
-                        -<input type="text" size="5">
-                        -<input type="text" size="5">
+                        <input type="text" name="receiver">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        *주소
+                    </td>
+                    <td>
+                        <input type="text" size="10" name="address1" id="address1">&nbsp;<button
+                            onclick="sample4_execDaumPostcode()">우편번호 찾기</button><br>
+                        <input type="text" size="50" name="address2" id="address2"><br>
+                        <input type="text" size="50" name="address3" id="address3">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        *휴대전화
+                    </td>
+                    <td>
+                        <input type="text" size="5" name="phone1">
+                        -<input type="text" size="5" name="phone2">
+                        -<input type="text" size="5" name="phone3">
                     </td>
                 </tr>
                 <tr class="TR">
@@ -145,15 +146,17 @@
                         이메일
                     </td>
                     <td>
-                        <input type="text">@<input type="text">
-                        <select name="email">
-                            <option>naver.com</option>
-                            <option>daum.net</option>
-                            <option>nate.com</option>
-                            <option>hanmail.net</option>
-                            <option>gmail.com</option>
-                            <option>yahoo.com</option>
+                        <input id="emailInput" placeholder="이메일 입력" type="text">
+                        @
+                        <select id="emailSelect" onchange="updateEmailText()">
+                            <option value="naver.com">naver.com</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="hanmail.net">hanmail.net</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="yahoo.com">yahoo.com</option>
                         </select>
+                        <div id="selectedEmailText"></div>
                     </td>
                 </tr>
                 <tr class="TR">
@@ -168,6 +171,7 @@
         </div>
         <input class="Button" type="submit" value="주문하기">
     </div>
+
     <hr>
 
     <footer>
