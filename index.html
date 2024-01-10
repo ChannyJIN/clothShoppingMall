@@ -7,11 +7,12 @@
     <title>옷 페이지</title>
     <style>
         body {
-            
+
             min-width: 900px;
         }
     </style>
     <link rel="stylesheet" href="./style.css">
+    <script src="./home.js"></script>
 </head>
 
 <body>
@@ -19,115 +20,100 @@
         <div class="hd">
             <a href="./index.html">
                 <img class="logo"
-                    src="data:image/png;base64,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"
+                    src="./multi/logo.jpg"
                     alt="logo">
-                <p class="head1">FitStyle</p>
             </a>
         </div>
-        
     </header>
-    <hr>
+
     <nav>
         <div class="Tmenu">
-            <span><a href="./goods_best.html" class="Tm">Best</a></span>
-            <span class="dropdown">
-                <span class="Tm1">상의
-                    <span class="dropdown-content1">
-                        <a href="./goods_outer_top.html">아우터</a>
-                        <a href="./goods_shortsT_top.html">반팔</a>
-                        <a href="./goods_knit_top.html">니트</a>
-                    </span>
-                </span>
-                
-            </span>
-            <span class="dropdown">
-                <span class="Tm2">하의
-                    <span class="dropdown-content2">
+            
+            <div class="menu">
+                <a href="./goods_best.html" class="Tm">Best</a>
+            </div>
+            <div class="menu">
+                상의
+                <div class="submenu">
+                    <a href="./goods_outer_top.html">아우터</a>
+                    <a href="./goods_shortsT_top.html">반팔</a>
+                    <a href="./goods_knit_top.html">니트</a>
+                </div>
+            </div>
+            <div class="menu">
+                하의
+                <div class="submenu">
                     <a href="./goods_slacks_pants.html">슬렉스</a>
                     <a href="./goods_traning_pants.html">트레이닝바지</a>
                     <a href="./goods_denim_pants.html">청바지</a>
-                </span>
-                </span>
-                
-            </span>
-            <span><a href="./goods_extra.html" class="Tm">악세서리</a></span>
-            <span><a href="./goods_shoes.html" class="Tm">신발</a></span>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="./goods_extra.html" class="Tm">악세서리</a>
+            </div>
+            <div class="menu">
+                <a href="./goods_shoes.html" class="Tm">신발</a>
+            </div>
         </div>
-        <hr>
+        
+    </nav>
+    <hr>
         <div class="nRight">
-            
+
             <span><a href="./order.html" class="order">Order</a></span>
         </div>
-    </nav>
 
     <hr>
-    <div class="ad">
 
-        <!-- 이전 화살표 -->
-        <button id="prevButton"><</button>
-
-                <!-- 광고를 표시할 div -->
-                <div class="ad">
-                    <!-- 광고 이미지 목록 -->
-                    <div class="ad-box">
-                        <img src="./multi/back1.JPG" width="900px"
-                            alt="광고1">
-                    </div>
-                    <div class="ad-box">
-                        <img src="./multi/back2.JPG" width="900px" alt="광고2">
-                    </div>
-                    
-                </div>
-
-
-                <!-- 다음 화살표 -->
-                <button id="nextButton">></button>
+    <div class="slider" id="imageSlider">
+        <div class="slides animate">
+            <img src="./multi/back1.JPG" alt="이미지 1">
+            <img src="./multi/back2.JPG" alt="이미지 2">
+        </div>
     </div>
+
+
 
     <div class="ad2">
         <div class="ad-box4">
-            <img src="https://image.auction.co.kr/hanbando/202311/448c2b77-a6bc-4394-9749-655bbd479b63.jpg" alt="광고4">
+            <img src="https://image.auction.co.kr/hanbando/202311/448c2b77-a6bc-4394-9749-655bbd479b63.jpg" alt="광고4"
+                width="100%">
         </div>
     </div>
     <hr>
     <div class="goods">
         <div class="goodsA">
-            <p class="title">Best 상품</p>
+            <p class="title">Best</p>
             <div class="goodsA-1">
                 <div class="goodsA-2">
                     <div class="knit">
                         <a href="https://bowlow.co.kr/product/detail.html?product_no=4738&cate_no=42&display_group=1&utm_medium=paid&utm_source=ig&utm_id=6216559986444&utm_content=6470899932844&utm_term=6470899605444&utm_campaign=6216559986444&fbclid=PAAaaz_UkJ_Sc3H_HYJaXk39pNENeAzOb6Ihojnq8nJJRWMqQkmp4Y_izczic_aem_AbfDtLTmCY3m-p6DF8tSwYAVFXD7ywjppDGpNzo8efNGQ2wG4k258oJpKp0ue9xKDQAJTthStSQMEvpEv3pFryq2#enp_mbris"
-                            target="_blank">
+                            target="right">
                             <img class="image" width="400px"
                                 src="https://m.bowlow.co.kr/web/upload/NNEditor/20231114/3f582ed7a899f09d594528b230e31b9e.jpg"
                                 alt="옷 사진"><br><span class="text">(바우로) 패르가몬 패딩 블루종<br></span><span
                                 class="sale">10%<br></span>
                             <span>1EA -> 140,600원</span>
-                        </a> 
+                        </a>
                     </div>
                     <div class="knit">
-                        <a href="https://ikkei.co.kr/84/?idx=321#prod_detail_detail"
-                            target="_blank">
-                            <img class="image" width="400px"
-                                src="./multi/shortsT2.JPG"
-                                alt="옷 사진"><br><span class="text">(이케이) 머슬핏 골지 헨리넥 반팔 니트<br></span><span
-                                class="sale">7%<br></span>
+                        <a href="https://ikkei.co.kr/84/?idx=321#prod_detail_detail" target="right">
+                            <img class="image" width="400px" src="./multi/shortsT2.JPG" alt="옷 사진"><br><span
+                                class="text">(이케이) 머슬핏 골지 헨리넥 반팔 니트<br></span><span class="sale">7%<br></span>
                             <span>1EA -> 29,900원</span>
                         </a>
                     </div>
                 </div>
                 <div class="goodsA-2">
                     <div class="knit">
-                        <a href="https://ikkei.co.kr/46/?idx=512"
-                            target="_blank">
+                        <a href="https://ikkei.co.kr/46/?idx=512" target="right">
                             <img class="image" width="400px" src="./multi/knit3.JPG" alt="옷 사진"><br><span
-                                class="text">(이케이) 프리미엄 블렌드 울 레글런 니트<br></span><span class="sale">10%<br></span>
+                                class="text">(이케이) 프리미엄 블렌드 <br>울 레글런 니트<br></span><span class="sale">10%<br></span>
                             <span>1EA -> 43,900원</span>
                         </a>
                     </div>
                     <div class="knit">
-                        <a href="https://ikkei.co.kr/87/?idx=521"
-                            target="_blank">
+                        <a href="https://ikkei.co.kr/87/?idx=521" target="right">
                             <img class="image" width="400px" src="./multi/slacks3.JPG" alt="옷 사진"><br><span
                                 class="text">(이케이) 프리미엄 TR 비조 기모 슬랙스<br></span><span class="sale">10%<br></span>
                             <span>1EA -> 59,900원</span>
@@ -135,18 +121,16 @@
                     </div>
                 </div>
                 <div class="goodsA-2">
-                    
+
                     <div class="knit">
-                        <a href="https://ikkei.co.kr/41/?idx=455"
-                            target="_blank">
-                            <img class="image" width="400px"
-                                src="./multi/denim4.JPG" alt="옷 사진"><br><span
+                        <a href="https://ikkei.co.kr/41/?idx=455" target="right">
+                            <img class="image" width="400px" src="./multi/denim4.JPG" alt="옷 사진"><br><span
                                 class="text">(이케이) 파머 퍼티그 데님 팬츠<br></span><span class="sale">15%<br></span>
                             <span>1EA -> 51,900원</span>
                         </a>
                     </div>
                     <div class="knit">
-                        <a href="https://kream.co.kr/products/12831" target="_blank">
+                        <a href="https://kream.co.kr/products/12831" target="right">
                             <img class="image" width="400px" src="./multi/shoes1.PNG" alt="신발 사진"><br><span
                                 class="text">나이키 에어포스 1 '07 로우 화이트<br></span><span class="sale">5%<br></span>
                             <span>1EA -> 116,000원</span>
@@ -155,9 +139,18 @@
                 </div>
             </div>
         </div>
-    <hr>
+        <hr>
+        
+        <div>
+            <p class="title">상품 홈페이지</p>
+            <iframe name="right" src="" frameborder="0" width="450px" height="800px">
 
+            </iframe>
+        </div>
+        
+    </div>
     <footer>
+        <hr>
         <p class="p">옷 추천 홈페이지입니다. <br> 즐거운 쇼핑되세요!
         <p>COPYRIGHT © ByeongChanJIN</p>
     </footer>
