@@ -145,11 +145,22 @@ a {
 
 }
 
+.text {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.sale {
+    font-size: 15px;
+    font-weight: 800;
+    color: red;
+}
+
 .goodsA-2,
 .goodsB-2 {
     display: flex;
     flex-direction: row;
-    
+
 }
 
 iframe {
@@ -204,4 +215,6 @@ footer {
     text-align: center;
     width: 100%;
     bottom: 0%;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 30px;
 }
