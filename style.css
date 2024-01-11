@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nanum+Pen+Script&display=swap');
-
+@font-face{
+    src:url("./Pretendard-1.3.9/web/static/woff/Pretendard-Medium.woff");
+    font-family : "pretendard";
+}
 
 header {
     margin-top: 50px;
@@ -60,9 +63,10 @@ a {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
-    font-family: 'Nanum Pen Script', cursive;
+    /*font-family: 'Nanum Pen Script', cursive;*/
+    font-family: "pretendard";
 }
 
 
@@ -116,15 +120,17 @@ a {
 
 .title {
     text-align: center;
-    font-size: 30px;
-    font-family: 'Nanum Pen Script', cursive;
+    font-size: 23px;
+    font-family: "pretendard";
     font-weight: 400;
 }
+
 
 .goods {
     display: flex;
     justify-content: space-around;
-    margin: 60px;
+    margin: 80px 200px;
+  
 }
 
 .image {
@@ -174,20 +180,23 @@ iframe {
 
 .orderT {
     font-size: 30px;
-    font-family: 'Nanum Pen Script', cursive;
+    /*font-family: 'Nanum Pen Script', cursive;*/
     font-weight: 400;
+    font-family: "pretendard";
 }
 
 .table1 {
     position: relative;
     left: 200px;
     margin-bottom: 70px;
+    font-family: "pretendard";
 }
 
 .table2 {
     position: relative;
     left: 200px;
     margin-bottom: 70px;
+    font-family: "pretendard";
 }
 
 td {
@@ -199,11 +208,12 @@ td {
 }
 
 input[type="submit"] {
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 20px;
+    /*font-family: 'Nanum Pen Script', cursive;*/
+    font-family: "pretendard";
+    font-size: 15px;
     margin-top: 20px;
-    background-color: rgb(253, 253, 237);
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 
@@ -215,6 +225,7 @@ footer {
     text-align: center;
     width: 100%;
     bottom: 0%;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 30px;
+    /*font-family: 'Nanum Pen Script', cursive;*/
+    font-family: "pretendard";
+    font-size: 20px;
 }
